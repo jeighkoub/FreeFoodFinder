@@ -1,7 +1,3 @@
-# eecs486
-EECS 486 Final Project
-
-
 This Project consists of 3 major components: 
 
 The Web Crawler - crawl.py: 
