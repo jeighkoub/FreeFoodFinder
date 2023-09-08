@@ -1,0 +1,21 @@
+<!-- This is the main index page for displaying the main results and let them be displayed.
+We may want to make this client side with react for real time searching.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Main Home Page </title>
+</head>
+<body>
+	{% include 'navbar.html' %}
+    <h1>Homepage</h1>
+    <br/>
+    <span>This is where we will display the main results and allow them to be searched. End static code.</span>
+    <br/>
+
+    <div id="reactEntry">
+        Loading ...
+    </div>
+    <!-- Load JavaScript -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bundle.js') }}"></script>
+</body>
+</html>

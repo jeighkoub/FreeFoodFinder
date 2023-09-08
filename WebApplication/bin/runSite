@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# runSite
+set -Eeuo pipefail
+set -x
+# Call database create if the database file does not exist
+if [ ! -f "var/WebInterface.sqlite3" ]; then
+	./bin/database create
+fi
+# Set FLASK_ENV and FLASK_APP environment variables
+export FLASK_ENV=development
+export FLASK_APP=WebInterface
+# Run the development server on port 8000
+flask run --host 0.0.0.0 --port 8000

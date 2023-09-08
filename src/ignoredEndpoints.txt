@@ -1,0 +1,4 @@
+about/
+contact/
+contact-us/
+staff/
